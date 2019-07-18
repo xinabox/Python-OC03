@@ -1,7 +1,7 @@
-from OC03 import OC03
-from microbit import *
+from xOC03 import xOC03
+from xCore import xCore
 
-OC03 = OC03()
+OC03 = xOC03()
 
 # start OC03
 OC03.init()
@@ -14,8 +14,8 @@ while True:
 
     # close relay
     OC03.writePin(True)		
-    sleep(DELAY)
+    xCore.sleep(DELAY)
     
     # open relay
     OC03.writePin(False)
-    sleep(DELAY)
+    xCore.sleep(DELAY)
