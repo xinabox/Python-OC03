@@ -1,2 +1,2 @@
-# uBit-OC03
-OC03 uPython library for MicroBit
+# py-OC03
+Python module for OC03
