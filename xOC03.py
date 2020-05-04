@@ -31,4 +31,4 @@ class xOC03:
     def getStatus(self):
         self.i2c.write(self.addr, bytearray([PCA9554A_REG_OUTPUT_PORT]))
         pin_state = self.i2c.read(self.addr, 1)
-        return pin_state[0]
+        return bool(int(pin_state[0]) & 1)
