@@ -4,13 +4,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="xinabox-OC03",
-    version="0.0.2",
+    version="0.0.3",
     author="Luqmaan Baboo",
     author_email="luqmaanbaboo@gmail.com",
     description="Solid state relay",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/xinabox/Python-OC03",
+    install_requires=["xinabox-CORE",],
     py_modules=["xOC03",],
     packages=setuptools.find_packages(),
     classifiers=[
